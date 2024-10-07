@@ -1,0 +1,111 @@
+:root {
+  --background_base_color: #131313;
+  --background_highlight: #302f2f;
+  --gray_text_color: #c3d3d3;
+}
+
+.flex {
+  display: flex;
+}
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+.align_center {
+  align-items: center;
+}
+.justify_center {
+  justify-content: center;
+}
+.container {
+  width: 100%;
+}
+.scale_80 {
+  scale: 80%;
+}
+.svg {
+  width: 44px;
+  filter: invert(1);
+  padding-inline: 7px;
+}
+.hover_to_scale:hover {
+  scale: 83%;
+}
+.hover_scale_105:hover {
+  scale: 105%;
+}
+.ul_tags {
+  list-style: none;
+}
+.a_tags {
+  text-decoration: none;
+  color: var(--gray_text_color);
+}
+.list_headings {
+  font-weight: 800;
+}
+.buttons {
+  margin-inline: 10px;
+  font-weight: bold;
+  font-size: 1.01rem;
+  white-space: nowrap;
+  padding: 8px 15px;
+}
+.hover_to_underline:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.profile {
+  width: 150px;
+  height: 160px;
+  margin: 10px auto 10px auto;
+  border-radius: 8px;
+}
+
+.circle_profile {
+  margin: 10px auto 10px auto;
+  border-radius: 50%;
+}
+.ul_columns {
+  /* border: 2px solid red; */
+  padding-inline: 10px;
+}
+.hover_to_highlight:hover {
+  background-color: #05ff86f3;
+}
+.border {
+  border: 2px solid red;
+}
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+.click_to_highlight:active {
+  background-color: var(--button_background_color);
+}
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #1e1e1e; /* Dark background */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #444444; /* Dark gray thumb */
+  border-radius: 10px; /* Optional: Rounded corners */
+  border: 3px solid #1e1e1e; /* Adds space between the thumb and the track */
+}
+
+/* Hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555555; /* Lighter gray on hover */
+}
+
+.invert {
+  filter: invert(1);
+}

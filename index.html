@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaina+2&family=Dosis&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main container flex">
+        <div class="nav flex align_center">
+            <div class="hamburger click_to_highlight logo_container hide_hamburger  ">
+                <img class="svg " src="./assets/hamburger.svg" alt="hamburger">
+            </div>
+            <!-- <div class="sign_in_section align_center flex  ">
+                <button class="sign_up buttons hover_scale_105">Sign up</button>
+                <button class="log_in buttons hover_scale_105">Log in</button>
+            </div> -->
+            <div class="home_and_search flex align_center ">
+                <div class="home_container conatiner flex">
+                    <img class="svg scale_80 hover_to_scale" src="./assets/home.svg" alt="home_icon">
+                </div>
+                <div class="search_conatiner container flex align_center">
+                    <img class="svg scale_80 hover_to_scale" src="./assets/search.svg" alt="search">
+                    <input class="search_box " type="text" placeholder="What do you want to play?">
+                    <img class="svg scale_80 browse hover_to_scale" src="./assets/browse.svg" alt="search">
+                </div>
+            </div>
+
+            <div class="logo_container conatiner">
+                <img class="svg" src="./assets/spotify_logo.svg" alt="spotify_logo">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="content flex conatiner">
+        <div class="left conatiner flex_column ">
+            <div class="library_heading flex container">
+                <div class="dummy_container flex container">
+                    <div class="library_with_icon flex conatiner">
+                        <img src="./assets/collapse.svg" class="svg" alt="cllapse">
+                        <span class="heading">Your Library</span>
+                    </div>
+                    <img src="./assets/cross.svg" class="svg cross_icon click_to_highlight" alt="cross_icon">
+                </div>
+            </div>
+            <div class="playlist_box">
+                <!-- <div class="song_card conatiner flex">
+                    <div class="song_href hidden"></div>
+                    <div class="serial_no hidden"></div>
+                    <img class="music_icon " src="./assets/music.svg" alt="">
+                    <div class="song_details container flex_column">
+                        <div class="song_name">
+                            Khamoosiyan
+                        </div>
+                        <div class="artist_name">
+                            Arijit Singh
+                        </div>
+                    </div>
+                    <img class="song_play_icon " src="./assets/play.svg " alt="">
+                </div> -->
+            </div>
+            <div class="legal_section">
+                <ul>
+                    <li>
+                        <ul class="flex ">
+                            <li><span><a href="#">Legal</a></span></li>
+                            <li><span><a href="#">Safety & Privacy Center</a></span></li>
+                            <li><span><a href="#">Privacy Policy</a></span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="flex">
+                            <li><span><a href="#">Cookies</a></span></li>
+                            <li><span><a href="#">About Ads </a></span></li>
+                            <li><span><a href="#">Accessibillity</a></span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><span><a href="#">Cookies</a></span></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="lang_box container">
+                <div class="lang_button hover_scale_105 flex align_center">
+                    <img src=" ./assets/language.svg" alt="lang" class="svg">
+                    <span class="lang_name">English</span>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right_main_content flex_column container">
+                <div class="sections_container">
+                    <div class="sections flex_column container" id="local_playlists">
+                        <div class="heading_conatiner flex conatiner">
+                            <a class="heading a_tags hover_to_underline" href="#">Playlists on your device</a>
+                        </div>
+                        <div class="cards_container flex container">
+                            <!-- <div class="card flex_column  container">
+                                <img class="profile " src="./assets/top_songs_global.png" alt="pritam">
+                                <div class="description">Your weekly update of the most played..</div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="sections flex_column container">
+                        <div class="heading_conatiner flex conatiner">
+                            <a class="heading a_tags hover_to_underline" href="#">Popular artists</a>
+                            <a class="show_all a_tags hover_to_underline" href="#">Show all</a>
+                        </div>
+                        <div class="cards_container flex container">
+                            <div class="card flex_column container">
+                                <img class=" profile circle_profile" src="./assets/pritam.png" alt="pritam">
+                                <div class=" name">Pritam</div>
+                                <div class=" description">Artist</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sections flex_column container album">
+                        <div class="heading_conatiner flex conatiner">
+                            <a class="heading a_tags hover_to_underline" href="#">Popular albums</a>
+                            <a class="show_all a_tags hover_to_underline" href="#">Show all</a>
+                        </div>
+                        <div class="cards_container flex container">
+                            <div class="card flex_column container">
+                                <img class="profile " src="./assets/honey.png" alt="pritam">
+                                <div class="name">GLORY</div>
+                                <div class="description">Yo Yo Honey Singh</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sections flex_column container ">
+                        <div class="heading_conatiner flex conatiner">
+                            <a class="heading a_tags hover_to_underline" href="#">Popular radio</a>
+                            <a class="show_all a_tags hover_to_underline" href="#">Show all</a>
+                        </div>
+                        <div class="cards_container flex container">
+                            <div class="card flex_column container">
+                                <img class="profile" src="./assets/arijit_radio.png" alt="pritam">
+                                <div class="description">With Sachin-Jigar, Mithoon , Pritam..</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sections flex_column container ">
+                        <div class="heading_conatiner flex conatiner">
+                            <a class="heading a_tags hover_to_underline" href="#">Featured Charts</a>
+                            <a class="show_all a_tags hover_to_underline" href="#">Show all</a>
+                        </div>
+                        <div class="cards_container flex container">
+                            <div class="card flex_column container">
+                                <img class="profile" src="./assets/top_songs_global.png" alt="pritam">
+                                <div class="description">Your weekly update of the most played..</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sections flex_column container ">
+                        <div class="heading_conatiner flex conatiner">
+                            <a class="heading a_tags hover_to_underline" href="#">Spotify Playlist</a>
+                            <a class="show_all a_tags hover_to_underline" href="#">Show all</a>
+                        </div>
+                        <div class="cards_container flex container">
+                            <div class="card flex_column container">
+                                <img class="profile" src="./assets/party_hits.png" alt="pritam">
+                                <div class="description">A mix of biggest pop,dance,and hiphop..</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_container flex_column container">
+                    <div class="informatioin_box flex container">
+                        <div class="company ul_columns">
+                            <ul class="ul_tags">
+                                <li class="list_headings">Company</li>
+                                <li><a class="a_tags hover_to_underline" href="#">About</a></li>
+                                <li><a class="a_tags hover_to_underline" href="#">Jobs</a></li>
+                                <li><a class="a_tags hover_to_underline" href="#">For the Record</a></li>
+                            </ul>
+                        </div>
+                        <div class="Communities ul_columns">
+                            <ul class=" ul_tags">
+                                <li class="list_headings">Communities</li>
+                                <li><a class="a_tags hover_to_underline" href="#">For Artists</a></li>
+                                <li><a class="a_tags hover_to_underline" href="#">Developers</a></li>
+                                <li><a class="a_tags hover_to_underline" href="#">Advertising</a></li>
+                                <li><a class="a_tags hover_to_underline" href="#">Investors</a></li>
+                                <li><a class="a_tags hover_to_underline" href="#">Vendors</a></li>
+                            </ul>
+                        </div>
+                        <div class="Useful_links ul_columns">
+                            <ul class="ul_tags">
+                                <li class="list_headings">Useful links</li>
+                                <li><a class="a_tags hover_to_underline" href="#">Support</a></li>
+                                <li><a class="a_tags hover_to_underline" href="#">Free Mobile App</a></li>
+                            </ul>
+                        </div>
+                        <div class="Spotify_Plans ul_columns">
+                            <ul class="ul_tags ">
+                                <li class="list_headings">Premium Individual</li>
+                                <li><a class="a_tags hover_to_underline" href="#">Premium Duo</a></li>
+                                <li><a class="a_tags hover_to_underline" href="#">Premium Family</a></li>
+                                <li><a class="a_tags hover_to_underline" href="#">Premium Student</a></li>
+                                <li><a class="a_tags hover_to_underline" href="#">Spotify Free</a></li>
+                            </ul>
+                        </div>
+                        <div class="Social_media ul_columns">
+                            <ul class="ul_tags flex">
+                                <li><img src="./assets/insta.svg" class="svg hover_to_highlight" alt="insta"></li>
+                                <li><img src="./assets/twitter.svg" class="svg hover_to_highlight" alt="twitter">
+                                </li>
+                                <li><img src="./assets/facebook.svg" class="svg hover_to_highlight" alt="facebook">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copy_right flex container">
+                        <p>© 2024 Spotify AB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player flex_column align_center ">
+                <div class="vol_range_container ">
+                    <div class="container flex">
+                        <input type="range" class="vol_range invert">
+                        <div class="vol_value">0</div>
+                    </div>
+                </div>
+                <div class="vol_btn_container container flex align_center ">
+                    <img src="./assets/volume_high.svg" class="invert vol_btns click_to_highlight" alt="volume_high">
+                </div>
+                <div class="seekbar_limit_container flex container">
+                    <div class="seekbar">
+                        <div class="seekbar_circle"></div>
+                    </div>
+                </div>
+                <div class="time_container flex container align_center">
+                    <div class="current_time time flex align_center">
+                        00.00
+                    </div>
+                    <div class="song_duration time flex align_center">
+                        00.00
+                    </div>
+                </div>
+                <div class="third_part container flex">
+                    <div class="music_icon container flex align_center">
+                        <img class="song_image invert" src="./assets/music.svg" alt="song_image">
+                    </div>
+                    <div class="song_and_controller container flex align_center">
+                        <div class="song_details_container flex_column container">
+                            <div class="song_name">
+                                Song name
+                            </div>
+                            <div class="song_artist">
+                                Song artist
+                            </div>
+                        </div>
+                        <div class="buttons_container flex conatiner align_center">
+                            <img class="btn_controllers previous click_to_highlight" src="./assets/previous.svg" alt="">
+                            <div class="play_pause_container flex">
+                                <img class=" play_pause " src="./assets/play_pause.svg" alt="play_pause">
+                                <!-- <img class=" play_pause play_btn " data-state="playing"
+                                        src="./assets/play_pause.svg" alt=""> -->
+                            </div>
+                            <img class="btn_controllers next click_to_highlight" src="./assets/next.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
